@@ -88,3 +88,15 @@ function playerScore() {
     const totalScore = document.getElementById("score");
     totalScore.textContent = `You have scored ${score} out of a total ${Questions.length}`;
 }
+
+function nextQuestion() {
+    if (currentQuestion < Questions.length - 1) {
+        currentQuestion++;
+        loadQuestions();
+    } else {
+        document.getElementById("ans").remove();
+        document.getElementById("question").remove();
+        document.getElementById("submit").remove();
+        playerScore();
+    }
+}
