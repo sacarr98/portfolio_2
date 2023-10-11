@@ -1,0 +1,32 @@
+.questions_panel {
+    margin-top: 10%;
+    color: black;
+    font-size: 150%;
+}
+
+.questions {
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
+.answers {
+    font-size: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+}
+
+button {
+    margin-right: 75px;
+    margin-top: 8%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #4f98c2;
+    color: white;
+    border: none;
+}
+
+#score {
+    font-size: 30px;
+    color: darkslategray;
+}
