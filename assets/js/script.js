@@ -60,8 +60,26 @@ let score = 0;
 
 function loadQuestions() {
     const question = document.getElementById("question");
-    const opt = document.getElementById("answer");
+    const ans = document.getElementById("answer");
 
-    question.textContent = Questions[currQuestion].ques;
-    opt.innerHTML = "";
+    question.textContent = Questions[currentQuestion].ques;
+    ans.innerHTML = "";
+
+    for (let i = 0; i < Questions[currentQuestion].a.length; i++) {
+        const optionsdiv = document.createElement("div");
+        const option = document.createElement("input");
+        const optionLabel = document.createElement("label");
+
+        option.type = "radio";
+        option.name = "answer";
+        option.value = i;
+
+        optionLabel.textContent = Questions[currentQuestion].a[i].text;
+
+        optionsdiv.appendChild(option);
+        optionsdiv.appendChild(optionLabel);
+        ans.appendChild(optiondiv);
+    }
 }
+
+loadQuestions();
