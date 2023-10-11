@@ -83,3 +83,8 @@ function loadQuestions() {
 }
 
 loadQuestions();
+
+function playerScore() {
+    const totalScore = document.getElementById("score");
+    totalScore.textContent = `You have scored ${score} out of a total ${Questions.length}`;
+}
