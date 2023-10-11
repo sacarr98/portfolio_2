@@ -56,3 +56,6 @@ const Questions = [{
 
 
 ];
+
+let currQuestion = 0;
+let score = 0;
