@@ -100,3 +100,14 @@ function nextQuestion() {
         playerScore();
     }
 }
+
+function checkAnswer() {
+    const playerAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
+    if (Questions[currentQuestion].a[playerAnswer].isCorrect) {
+        score++;
+        console.log("Correct");
+        nextQuestion();
+    } else {
+        nextQuestion();
+    }
+}
