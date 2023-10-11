@@ -78,7 +78,7 @@ function loadQuestions() {
 
         optionsdiv.appendChild(option);
         optionsdiv.appendChild(optionLabel);
-        ans.appendChild(optiondiv);
+        ans.appendChild(optionsdiv);
     }
 }
 
